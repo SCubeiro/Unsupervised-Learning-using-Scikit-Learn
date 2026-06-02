@@ -4,7 +4,7 @@
 > Ciencia de Datos. Recreación y explicación de las principales técnicas de **aprendizaje no
 > supervisado** con [scikit-learn](https://scikit-learn.org/).
 
-## 📌 Acerca del proyecto
+## Acerca del proyecto
 
 A partir del notebook `sklearn-unsupervised-learning.ipynb`, el proyecto recorre —con código
 ejecutable y visualizaciones— las técnicas más comunes de aprendizaje no supervisado:
@@ -14,7 +14,7 @@ ejecutable y visualizaciones— las técnicas más comunes de aprendizaje no sup
 - **Reducción de dimensionalidad**: PCA y t-SNE.
 - **Resumen** y referencias.
 
-## 📂 Contenido del repositorio
+## Contenido del repositorio
 
 | Archivo / Carpeta | Descripción |
 | --- | --- |
@@ -23,7 +23,7 @@ ejecutable y visualizaciones— las técnicas más comunes de aprendizaje no sup
 | `Ambiente/Ambiente.md` | Explicación de cada comando del ambiente + capturas del proceso. |
 | `Ambiente/Imagenes/` | Capturas de pantalla usadas en la explicación. |
 
-## ✅ Requisitos previos
+## Requisitos previos
 
 | Herramienta | macOS | Windows |
 | --- | --- | --- |
@@ -37,7 +37,7 @@ git --version
 python3 --version   # en Windows:  py --version
 ```
 
-## 🚀 Reproducir el proyecto (Mac y Windows)
+## Reproducir el proyecto (Mac y Windows)
 
 > Los comandos son los mismos en ambos sistemas; **lo único que cambia es crear y activar el
 > entorno virtual** (Paso 2). Sigue la columna que corresponda a tu sistema.
@@ -51,14 +51,14 @@ cd Unsupervised-Learning-using-Scikit-Learn
 
 ### 2. Crear y activar el entorno virtual
 
-**🍎 macOS / Linux** (terminal `bash` o `zsh`):
+**macOS / Linux** (terminal `bash` o `zsh`):
 
 ```bash
 python3.12 -m venv .venv
 source .venv/bin/activate
 ```
 
-**🪟 Windows** (PowerShell):
+**Windows** (PowerShell):
 
 ```powershell
 py -3.12 -m venv .venv
@@ -98,7 +98,7 @@ python -m ipykernel install --user --name=unsupervised-learning-sklearn --displa
 python -c "import numpy, pandas, sklearn, seaborn, plotly; print('OK')"
 ```
 
-Si imprime `OK`, el ambiente quedó listo. ✅
+Si imprime `OK`, el ambiente quedó listo. 
 
 ### 6. Abrir el notebook
 
@@ -110,10 +110,10 @@ Abre `sklearn-unsupervised-learning.ipynb` y, en el selector de kernel, elige
 **"Unsupervised Learning using Scikit-Learn"**. *(También puedes abrir la carpeta en **VS Code** y
 seleccionar ese mismo kernel.)*
 
-## 📖 Explicación del ambiente (con capturas)
+## Explicación del ambiente (con capturas)
 
 La explicación detallada de **qué hace cada comando**, junto con las capturas del proceso, está en
-👉 **[`Ambiente/Ambiente.md`](Ambiente/Ambiente.md)**.
+**[`Ambiente/Ambiente.md`](Ambiente/Ambiente.md)**.
 
 ---
 

@@ -8,7 +8,7 @@ persona puede recrear exactamente el mismo ambiente.
 Este documento explica **brevemente qué hace cada comando**, con capturas del proceso real (hecho en
 **macOS**, terminal zsh, Python 3.12 de Homebrew).
 
-> 👉 ¿Solo quieres **clonar y reproducir** el proyecto (en Mac o Windows)? Las instrucciones paso a
+> ¿Solo quieres **clonar y reproducir** el proyecto (en Mac o Windows)? Las instrucciones paso a
 > paso están en el **[README](../README.md)** de la raíz del repositorio.
 
 ---
