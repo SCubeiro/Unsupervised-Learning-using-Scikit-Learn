@@ -14,3 +14,10 @@ __pycache__/
 # Sistema operativo
 .DS_Store
 Thumbs.db
+
+# Claude Code (configuración local del agente — no se comparte)
+.claude/
+
+# Capturas de pantalla (macOS) — material de referencia, no se versiona
+Captura de pantalla*.png
+Screenshot*.png

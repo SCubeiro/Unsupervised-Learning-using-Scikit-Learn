@@ -14,11 +14,17 @@ ejecutable y visualizaciones— las técnicas más comunes de aprendizaje no sup
 - **Reducción de dimensionalidad**: PCA y t-SNE.
 - **Resumen** y referencias.
 
+> **El entregable son dos piezas:** las **diapositivas (Canva)** dan el contexto técnico/histórico, y el **notebook propio**
+> (`presentacion-aprendizaje-no-supervisado.ipynb`) es la demostración técnica en vivo. El guion de las diapositivas está en
+> `guion-presentacion-canva.md`.
+
 ## Contenido del repositorio
 
 | Archivo / Carpeta | Descripción |
 | --- | --- |
-| `sklearn-unsupervised-learning.ipynb` | Notebook principal con el desarrollo del tema. |
+| `presentacion-aprendizaje-no-supervisado.ipynb` | **Notebook de la presentación** (versión propia, enriquecida y pedagógica). Entregable principal. |
+| `guion-presentacion-canva.md` | Guion diapositiva por diapositiva para la presentación en Canva. |
+| `sklearn-unsupervised-learning.ipynb` | Notebook **original del video** (Lección 6), conservado como referencia. |
 | `requirements.txt` | Dependencias con sus versiones exactas (reproducibilidad). |
 | `Ambiente/Ambiente.md` | Explicación de cada comando del ambiente + capturas del proceso. |
 | `Ambiente/Imagenes/` | Capturas de pantalla usadas en la explicación. |
@@ -98,7 +104,7 @@ python -m ipykernel install --user --name=unsupervised-learning-sklearn --displa
 python -c "import numpy, pandas, sklearn, seaborn, plotly; print('OK')"
 ```
 
-Si imprime `OK`, el ambiente quedó listo. 
+Si imprime `OK`, el ambiente quedó listo.
 
 ### 6. Abrir el notebook
 
@@ -106,9 +112,9 @@ Si imprime `OK`, el ambiente quedó listo.
 jupyter lab        # o:  jupyter notebook
 ```
 
-Abre `sklearn-unsupervised-learning.ipynb` y, en el selector de kernel, elige
-**"Unsupervised Learning using Scikit-Learn"**. *(También puedes abrir la carpeta en **VS Code** y
-seleccionar ese mismo kernel.)*
+Abre **`presentacion-aprendizaje-no-supervisado.ipynb`** (el notebook de la presentación) y, en el selector de kernel,
+elige el de este proyecto — **"Unsupervised Learning using Scikit-Learn"** o **"Python 3"** del entorno `.venv`.
+*(También puedes abrir la carpeta en **VS Code** y seleccionar ese mismo kernel.)*
 
 ## Explicación del ambiente (con capturas)
 
