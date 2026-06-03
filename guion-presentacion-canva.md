@@ -10,6 +10,7 @@
 - **🎤 Guion:** lo que dice el presentador (no se escribe en la slide).
 - **💡 Dato:** el gancho curioso/histórico para enganchar a la clase.
 - **🖼️ Imagen:** qué visual buscar/poner.
+- **📁 Del notebook → Canva:** gráfica real ya exportada del notebook, lista en la carpeta `imagenes-canva/` — solo arrástrala a la slide (ver índice en `imagenes-canva/README.md`).
 
 ## Diseño sugerido
 
@@ -44,12 +45,16 @@
 
 - **En pantalla:** Supervisado (con respuestas ✅) **vs** No supervisado (sin respuestas ❓). Dos objetivos: **agrupar** y **simplificar**.
 - **🖼️ Imagen:** a la izquierda datos etiquetados por color; a la derecha los mismos puntos en gris (sin etiqueta).
+- **📁 Del notebook → Canva:** reusa `imagenes-canva/slide04-iris-especies-reales.png` como la mitad **con color**; para la mitad **sin etiqueta**, ponla en gris (o usa la misma silueta de puntos sin leyenda).
 - **💡 Dato:** *El término "análisis de clústeres" viene de los años 30, ¡de la psicología y la antropología, mucho antes de las computadoras modernas!*
 - **🎤 Guion:** *"En el aprendizaje supervisado le damos ejemplos con la respuesta correcta. En el no supervisado le quitamos las respuestas: solo le damos los datos y le pedimos que descubra la estructura solo. Sirve para dos cosas: agrupar lo parecido, y resumir datos complejos."*
 
 ### Diapositiva 4 — El dataset: Iris 🌸
 
 - **En pantalla:** 150 flores · 4 medidas · 3 especies. Foto de las 3 especies (setosa, versicolor, virginica).
+- **📁 Del notebook → Canva:** `imagenes-canva/slide04-iris-especies-reales.png` — las 150 flores graficadas y coloreadas por especie real.
+
+  ![Iris coloreado por especie real](imagenes-canva/slide04-iris-especies-reales.png)
 - **💡 Dato:** *El dataset de Iris lo popularizó el estadístico **Ronald Fisher en 1936** (las flores las midió el botánico Edgar Anderson). ¡Tiene casi 90 años y sigue siendo el "hola mundo" del machine learning!*
 - **🎤 Guion:** *"Vamos a usar Iris: medidas de pétalos y sépalos de 150 flores de 3 especies. El truco pedagógico: le ocultamos la especie al modelo, y al final destapamos la respuesta para ver si la adivinó solo."*
 
@@ -67,6 +72,11 @@
 
 - **En pantalla:** "Elige K centros → asigna cada punto al más cercano → repite." Una imagen de centroides.
 - **🖼️ Imagen:** GIF/diagrama de centroides moviéndose hasta estabilizarse.
+- **📁 Del notebook → Canva:** `imagenes-canva/slide06-kmeans-centroides.png` — los 3 clusters hallados con sus centroides (las **X** negras).
+
+  ![K-Means: 3 clusters con centroides](imagenes-canva/slide06-kmeans-centroides.png)
+
+  - *Extras opcionales:* `imagenes-canva/slide06-extra-codo-silueta.png` (cómo elegir K) · `imagenes-canva/slide06-extra-kmeans-k6-sobreajuste.png` (qué pasa con K de más).
 - **💡 Dato:** *El algoritmo lo creó **Stuart Lloyd en los Bell Labs en 1957**… ¡pero lo dejaron como reporte interno y no se publicó hasta 1982! El nombre "k-means" se lo puso James MacQueen en 1967.*
 - **🎤 Guion:** *"K-Means es el más clásico: tú eliges cuántos grupos quieres, él pone unos centros y va moviendo cada punto al centro más cercano hasta estabilizarse. Un uso curioso: comprimir imágenes, reduciéndolas a K colores. Y esto… mejor véanlo funcionando — vamos al notebook en un momento."*
 
@@ -78,12 +88,18 @@
 
 - **En pantalla:** Dos "lunas" entrelazadas; K-Means las parte mal. **"¿Y si los grupos no son redondos?"**
 - **🖼️ Imagen:** el clásico *two-moons*: a la izquierda mal cortado por K-Means.
+- **📁 Del notebook → Canva:** `imagenes-canva/slide07-dos-lunas-kmeans-vs-dbscan.png` — las dos lunas: K-Means corta recto (mal) vs DBSCAN sigue la forma (bien). *(Tip: para esta slide puedes recortar solo el panel izquierdo y reservar el derecho para la 8.)*
+
+  ![Two-moons: K-Means vs DBSCAN](imagenes-canva/slide07-dos-lunas-kmeans-vs-dbscan.png)
 - **🎤 Guion:** *"K-Means asume que los grupos son como pelotas redondas. Pero si los datos tienen forma de luna, los parte mal. Para eso existen otros algoritmos."*
 
 ### Diapositiva 8 — DBSCAN
 
 - **En pantalla:** "Agrupa por **densidad**." Núcleo / borde / **ruido (outlier)**. No hay que decirle cuántos grupos.
 - **🖼️ Imagen:** puntos densos formando clusters + puntos sueltos marcados como ruido.
+- **📁 Del notebook → Canva:** `imagenes-canva/slide08-dbscan-iris-ruido.png` — DBSCAN sobre Iris. *(Nota honesta: en esta corrida DBSCAN fusiona 2 especies en 1 grupo y casi no marca ruido; el mejor visual de "agrupa por densidad / sigue la forma" es el panel DBSCAN de la slide 7.)*
+
+  ![DBSCAN en Iris](imagenes-canva/slide08-dbscan-iris-ruido.png)
 - **💡 Dato:** *DBSCAN es de **1996** (Ester, Kriegel, Sander y Xu). En 2014 ganó el premio "Test of Time" — un reconocimiento a los trabajos que siguen siendo influyentes décadas después.*
 - **🎤 Guion:** *"DBSCAN agrupa por densidad: donde hay muchos puntos juntos, hay un grupo; lo que queda aislado es ruido. Dos ventajas enormes: no le dices cuántos grupos hay, y detecta outliers solo. Por eso se usa muchísimo en detección de fraude y datos de GPS."*
 
@@ -91,6 +107,9 @@
 
 - **En pantalla:** Un **dendrograma** (árbol). "Fusiona lo más parecido hasta tener un solo grupo." Eliges cuántos grupos **cortando el árbol**.
 - **🖼️ Imagen:** un dendrograma claro.
+- **📁 Del notebook → Canva:** `imagenes-canva/slide09-dendrograma.png` — dendrograma de Iris; la línea roja punteada corta el árbol en 3 grupos.
+
+  ![Dendrograma de Iris](imagenes-canva/slide09-dendrograma.png)
 - **💡 Dato:** *El dendrograma viene de la **biología**: es el mismo tipo de árbol que usan los biólogos para dibujar la evolución de las especies (de hecho "dendro" = árbol en griego).*
 - **🎤 Guion:** *"El jerárquico arma un árbol: empieza con cada punto solo y va fusionando los más parecidos hasta que queda uno. Lo bonito es que no eliges el número de grupos al inicio: cortas el árbol a la altura que tenga sentido. Lo verán dibujado en el notebook."*
 
@@ -108,6 +127,11 @@
 
 - **En pantalla:** "Encuentra los 2 ejes con **más variación**." Imagen de proyección 3D→2D.
 - **🖼️ Imagen:** nube de puntos alargada con una flecha en la dirección de máxima dispersión.
+- **📁 Del notebook → Canva:** `imagenes-canva/slide11-pca-2d.png` — Iris pasado de 4D a 2D con PCA, coloreado por especie real.
+
+  ![PCA: de 4D a 2D](imagenes-canva/slide11-pca-2d.png)
+
+  - *Extra opcional:* `imagenes-canva/slide11-extra-pca-scree-varianza.png` (cuánta información conserva cada componente).
 - **💡 Dato:** *PCA lo inventó **Karl Pearson en 1901** — ¡tiene más de 120 años! Curiosidad moderna: si le aplicas PCA al ADN de europeos, el resultado dibuja casi el mapa de Europa. "Los genes reflejan la geografía."*
 - **🎤 Guion:** *"PCA busca el mejor ángulo para 'fotografiar' los datos: los 2 ejes nuevos que capturan la mayor variación. Es como elegir la sombra que más información conserva. Es la técnica más veterana de todas, y se usa hasta en reconocimiento facial."*
 
@@ -115,6 +139,11 @@
 
 - **En pantalla:** "Mantiene cerca a los **vecinos**." Imagen de dígitos separados en 10 grupos.
 - **🖼️ Imagen:** el famoso mapa t-SNE de MNIST (los 10 dígitos en islas de colores).
+- **📁 Del notebook → Canva:** `imagenes-canva/slide12-pca-vs-tsne-digitos.png` — dígitos de 64 dimensiones: PCA los encima vs t-SNE los separa en 10 islas.
+
+  ![PCA vs t-SNE en dígitos](imagenes-canva/slide12-pca-vs-tsne-digitos.png)
+
+  - *Extras opcionales:* `imagenes-canva/slide12-extra-digitos-muestras.png` (qué es un dígito 8×8 = un punto de 64-D) · `imagenes-canva/slide12-extra-tsne-iris.png` (t-SNE sobre Iris).
 - **💡 Dato:** *t-SNE es reciente: **2008**, de Laurens van der Maaten y **Geoffrey Hinton** (uno de los "padres" del deep learning, premio Turing 2018). Hay PCA de 1901 y t-SNE de 2008: ¡un siglo de diferencia! Su sucesor moderno se llama UMAP.*
 - **🎤 Guion:** *"t-SNE es no lineal y sirve sobre todo para ver: coloca los puntos en 2D cuidando que los vecinos sigan juntos. Es lo que se usa para visualizar lo que 'aprenden' las redes neuronales. En el notebook verán cómo separa los 10 dígitos donde PCA no puede."*
 
