@@ -15,15 +15,16 @@ ejecutable y visualizaciones— las técnicas más comunes de aprendizaje no sup
 - **Resumen** y referencias.
 
 > **El entregable son dos piezas:** las **diapositivas (Canva)** dan el contexto técnico/histórico, y el **notebook propio**
-> (`presentacion-aprendizaje-no-supervisado.ipynb`) es la demostración técnica en vivo. El guion de las diapositivas está en
-> `guion-presentacion-canva.md`.
+> (`presentacion-aprendizaje-no-supervisado.ipynb`) es la demostración técnica en vivo. El repositorio incluye además dos
+> documentos de apoyo (ver tabla): el **manual técnico** del notebook y la guía de **PCA/t-SNE resueltos a mano**.
 
 ## Contenido del repositorio
 
 | Archivo / Carpeta | Descripción |
 | --- | --- |
 | `presentacion-aprendizaje-no-supervisado.ipynb` | **Notebook de la presentación** (versión propia, enriquecida y pedagógica). Entregable principal. |
-| `guion-presentacion-canva.md` | Guion diapositiva por diapositiva para la presentación en Canva. |
+| `documentacion-tecnica-aprendizaje-no-supervisado.md` | Manual técnico línea por línea del notebook: cada función, sus parámetros, el algoritmo por dentro y su fundamento matemático. |
+| `pca-tsne-a-mano-paso-a-paso.md` | Guía de PCA y t-SNE resueltos **a mano** (lápiz y papel), verificada contra NumPy/scikit-learn. Apoyo para el bloque de reducción de dimensionalidad. |
 | `sklearn-unsupervised-learning.ipynb` | Notebook **original del video** (Lección 6), conservado como referencia. |
 | `requirements.txt` | Dependencias con sus versiones exactas (reproducibilidad). |
 | `Ambiente/Ambiente.md` | Explicación de cada comando del ambiente + capturas del proceso. |
