@@ -405,3 +405,6 @@ gaussiana: eso es P, mi objetivo. Luego coloco los puntos en 2D y mido sus
 afinidades con una t de Student de colas pesadas: eso es Q. Muevo los puntos hasta
 que Q se parezca a P (minimizo KL). Como P solo guarda quién es vecino de quién,
 t-SNE preserva los grupos pero las distancias entre grupos no significan nada."*
+
+
+---
